@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                 // Check if the answer is correct by checking the swiped direction
                 val correct = checkAnswerForQuestion(position, direction == ItemTouchHelper.RIGHT)
 
-                // Remove the question when answered correctly, otherwise put it back on its place
+                // Remove the question when answered correctly, otherwise put it back in place
                 if (correct) {
                     questions.removeAt(position)
                     questionAdapter.notifyDataSetChanged()
